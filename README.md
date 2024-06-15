@@ -6,12 +6,19 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+    ```
+    ruby 3.3.1
+    ```
+
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+    ```
+    ./bin/rails db:create
+    ```
 
 * Database initialization
 
@@ -20,5 +27,12 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+- for running the app locally
+    ```
+    docker-compose up -d
+    ./bin/rails db:prepare
+    ./bin/dev
+    ```
 
 * ...
